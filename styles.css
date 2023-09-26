@@ -1,0 +1,188 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flovepik.com%2Fimage-400832170%2Fsmart-watch-background.html&psig=AOvVaw0JfKeu0teyYr8yvUhj6LvI&ust=1695832863319000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKie_ffbyIEDFQAAAAAdAAAAABAN");
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    gap: 20px;
+    padding: 20px
+}
+
+.hero img {
+    /* max-width: 100%; */
+    height: 125px;
+}
+
+.hero-content {
+    /* margin-top: 30px; */
+}
+
+/* Features Section Styles */
+.features {
+    padding: 20px;
+}
+
+.title-key {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ul-key {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.amount {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feature {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+/* Buy Now Section Styles */
+.buy-now {
+    background-color: #fff;
+    padding: 20px;
+    transition: all 1s;
+}
+
+.img-content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.watch-img {
+    width: 100px;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plan {
+    width: 30%;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 18px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.purchase-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .pricing {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
